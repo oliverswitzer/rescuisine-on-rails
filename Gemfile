@@ -37,7 +37,12 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem "capybara", group: [:development, :test]
+group :development do
+  gem "selenium-webdriver"
+  gem "capybara"
+  gem "factory_girl"
+end
+
 gem "devise"
 gem "haml", ">= 3.0.0"
 gem "haml-rails"

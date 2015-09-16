@@ -1,0 +1,10 @@
+/Users/oliverswitzer/.rvm/rubies/ruby-2.1.5/bin/ruby -r ./siteconf20150915-48725-1mevxra.rb extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+make "DESTDIR=" install
+installing default libraries
