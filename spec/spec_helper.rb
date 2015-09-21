@@ -1,5 +1,4 @@
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
-require 'rails_helper'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
@@ -10,3 +9,4 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 end
+

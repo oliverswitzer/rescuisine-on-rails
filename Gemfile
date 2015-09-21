@@ -40,6 +40,8 @@ end
 group :development do
   gem "selenium-webdriver"
   gem "capybara"
+  gem "poltergeist"
+  gem 'phantomjs', :require => 'phantomjs/poltergeist'
   gem "factory_girl"
 end
 
