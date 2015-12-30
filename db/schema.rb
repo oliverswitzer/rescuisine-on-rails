@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20140328215328) do
 
-  create_table "pickups", force: true do |t|
+  create_table "restaurants", force: true do |t|
     t.integer  "restaurant_id"
     t.integer  "shelter_id"
     t.string   "confirmation_code"

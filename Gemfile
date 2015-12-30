@@ -37,17 +37,19 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-group :development do
+group :test do
   gem "selenium-webdriver"
   gem "capybara"
   gem "poltergeist"
   gem 'phantomjs', :require => 'phantomjs/poltergeist'
   gem "factory_girl"
+  gem "rspec-rails", ">= 2.0.1"
 end
+
+gem "pry", group: [:test, :development]
 
 gem "devise"
 gem "haml", ">= 3.0.0"
 gem "haml-rails"
 gem "jquery-rails"
 gem "redis"
-gem "rspec-rails", ">= 2.0.1", group: [:development, :test]

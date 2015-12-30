@@ -1,3 +1,3 @@
 RescuisineOnRails::Application.routes.draw do
-  root to: 'pickups#index'
+  root to: 'restaurants#index'
 end
