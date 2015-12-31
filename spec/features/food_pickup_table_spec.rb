@@ -2,12 +2,17 @@ require 'rails_helper'
 
 feature 'pickup list' do
   scenario 'user can see restaurants that are giving away food', js: true do
+    givenThereAreRestaurants
     givenImOnTheRestaurantListPage
+
     thenISeeThePageHeader
     thenISeeTheTableHeaders
     thenISeeRestaurants
   end
 
+  def givenThereAreRestaurants
+    create(:restaurant)
+  end
 
   def givenImOnTheRestaurantListPage
     visit '/'
@@ -28,5 +33,4 @@ feature 'pickup list' do
     expect(page).to have_text('Blvd of Broken Creams')
     expect(page).to have_text('555-555-5555')
   end
-
 end

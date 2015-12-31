@@ -44,6 +44,7 @@ group :test do
   gem 'phantomjs', :require => 'phantomjs/poltergeist'
   gem "factory_girl"
   gem "rspec-rails", ">= 2.0.1"
+  gem "database_cleaner"
 end
 
 gem "pry", group: [:test, :development]

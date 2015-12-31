@@ -5,8 +5,14 @@
     %tr
       %th= t('restaurants.columns.name')
       %th= t('restaurants.columns.address')
+      %th= t('restaurants.columns.phone')
   %tbody
-    %tr.restaurant
-      %td
+    - @restaurants.each do |restaurant|
+      %tr.restaurant
+        %td= restaurant.name
+        %td= restaurant.address
+        %td= restaurant.phone
+
+
 
 
